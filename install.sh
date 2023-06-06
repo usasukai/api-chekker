@@ -1,6 +1,7 @@
 #!/bin/bash
- curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash -
- sudo yum install nodejs
+PASSWROD="hoge"
+ curl -fsSL https://rpm.nodesource.com/setup_18.x |sudo -S bash -
+ echo $PASSWROD| sudo -S yum install nodejs
  npm install
 
 
